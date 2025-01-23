@@ -1,7 +1,7 @@
 
-# Automation Testing Website - Playwright Tutorials
+# RapidTest - Automation Testing Hub
 
-Welcome to the **Automation Testing Website**! This website is dedicated to providing hands-on tutorials for learning **Playwright** automation testing through various scenarios and examples. The website is designed for anyone looking to get started with Playwright, from beginners to advanced testers.
+Welcome to **RapidTest**! This website is dedicated to providing hands-on tutorials for learning **Playwright** automation testing through various scenarios and examples. The website is designed for anyone looking to get started with Playwright, from beginners to advanced testers.
 
 ## Features
 
@@ -15,7 +15,7 @@ Welcome to the **Automation Testing Website**! This website is dedicated to prov
 The project is organized into the following structure:
 
 ```
-automation-testing-website/
+rapidtest/
 ├── index.html            # Landing page (entry point)
 ├── components/           # Component-specific pages and examples
 │   ├── extract-element/  # Example: Extract Element
@@ -52,13 +52,13 @@ Make sure you have the following installed:
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/your-username/automation-testing-website.git
+   git clone https://github.com/markadvk/rapidtest.git
    ```
 
 2. **Navigate to the Project Folder**
 
    ```bash
-   cd automation-testing-website
+   cd rapidtest
    ```
 
 3. **Open `index.html` in Your Browser**
@@ -103,4 +103,4 @@ This project is open-source and available under the MIT License.
 
 ## Contact
 
-If you have any questions or feedback, feel free to reach out to me via GitHub issues or directly at [your-email@example.com](mailto:your-email@example.com).
+If you have any questions or feedback, feel free to reach out to me via GitHub issues or directly at [markadvk.sdet@gmail.com]
