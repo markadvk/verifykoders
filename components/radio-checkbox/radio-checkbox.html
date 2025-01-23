@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn to handle radio buttons and checkboxes in automation testing.">
+    <meta name="keywords" content="radio buttons, checkboxes, automation, form testing">
+    <meta name="author" content="Automation Testing Hub">
+    <title>Checkboxes and Radio Buttons</title>
+    <link rel="icon" href="./../../assets/favicon.ico">
+    <link rel="stylesheet" href="./../../css/header.css">
+    <link rel="stylesheet" href="./../../css/footer.css">
+    <link rel="stylesheet" href="radio-checkbox.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Radio Buttons and Checkboxes</h1>
+        <p>Learn to handle radio buttons and checkboxes</p>
+    </header>
+
+    <main class="content">
+        <section id="checkboxes-section">
+            <h2 class="section-title">Checkbox Examples</h2>
+            <form id="checkbox-form">
+                <div class="checkbox-group">
+                    <label for="check1">
+                        <input type="checkbox" id="check1" class="checkbox" aria-label="Option 1"> Option 1
+                    </label>
+                </div>
+                <div class="checkbox-group">
+                    <label for="check2">
+                        <input type="checkbox" id="check2" class="checkbox" aria-label="Option 2"> Option 2
+                    </label>
+                </div>
+                <div class="checkbox-group">
+                    <label for="check3">
+                        <input type="checkbox" id="check3" class="checkbox" aria-label="Option 3"> Option 3
+                    </label>
+                </div>
+                <button type="button" class="btn" onclick="submitCheckboxes()" aria-label="Submit checkboxes">Submit</button>
+            </form>
+        </section>
+
+        <section id="radio-buttons-section">
+            <h2 class="section-title">Radio Button Examples</h2>
+            <form id="radio-form">
+                <div class="radio-group">
+                    <label for="radio1">
+                        <input type="radio" name="group1" id="radio1" class="radio" aria-label="Choice 1"> Choice 1
+                    </label>
+                </div>
+                <div class="radio-group">
+                    <label for="radio2">
+                        <input type="radio" name="group1" id="radio2" class="radio" aria-label="Choice 2"> Choice 2
+                    </label>
+                </div>
+                <div class="radio-group">
+                    <label for="radio3">
+                        <input type="radio" name="group1" id="radio3" class="radio" aria-label="Choice 3"> Choice 3
+                    </label>
+                </div>
+                <button type="button" class="btn" onclick="submitRadio()" aria-label="Submit radio buttons">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Automation Testing. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function submitCheckboxes() {
+            alert('Checkboxes submitted!');
+        }
+
+        function submitRadio() {
+            alert('Radio buttons submitted!');
+        }
+    </script>
+</body>
+
+</html>

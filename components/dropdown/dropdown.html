@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn how to handle dropdowns in automation testing with detailed examples and guides.">
+  <meta name="keywords" content="automation testing, dropdown handling, Playwright, Selenium, tutorials">
+  <meta name="author" content="Automation Testing Hub">
+  <title>Dropdowns</title>
+  <link rel="icon" href="./../../assets/favicon.ico">
+  <link rel="stylesheet" href="./../../css/header.css">
+  <link rel="stylesheet" href="./../../css/footer.css">
+  <link rel="stylesheet" href="dropdowns.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1>Dropdowns Showcase</h1>
+    <p>Learn to automate various dropdowns</p>
+  </header>
+
+  <div class="container">
+
+    <!-- Static Select Dropdown -->
+    <div class="dropdown-example">
+      <label for="carSelect">Static Select Dropdown</label>
+      <select id="carSelect" aria-label="Static Select Dropdown">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </select>
+    </div>
+
+    <!-- Searchable Dropdown -->
+    <div class="dropdown-example">
+      <label for="carSearch">Searchable Dropdown</label>
+      <input type="text" id="carSearch" placeholder="Search car..." aria-label="Searchable Dropdown">
+      <ul id="carList" role="list">
+        <li class="car-option" role="option">Volvo</li>
+        <li class="car-option" role="option">Saab</li>
+        <li class="car-option" role="option">Mercedes</li>
+        <li class="car-option" role="option">Audi</li>
+      </ul>
+    </div>
+
+    <!-- Multi-Select Dropdown -->
+    <div class="dropdown-example">
+      <label for="multiSelect">Multi-Select Dropdown</label>
+      <select id="multiSelect" multiple aria-label="Multi-Select Dropdown">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </select>
+    </div>
+
+    <!-- Custom List Dropdown -->
+    <div class="dropdown-example">
+      <label for="customDropdown">Custom List Dropdown</label>
+      <div class="custom-dropdown" role="menu">
+        <button class="dropdown-button" aria-haspopup="true" aria-expanded="false">Select a car</button>
+        <ul class="dropdown-menu">
+          <li class="dropdown-item" role="menuitem">Volvo</li>
+          <li class="dropdown-item" role="menuitem">Saab</li>
+          <li class="dropdown-item" role="menuitem">Mercedes</li>
+          <li class="dropdown-item" role="menuitem">Audi</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Searchable Dropdown functionality
+    const carSearch = document.getElementById('carSearch');
+    const carList = document.getElementById('carList');
+    const carOptions = document.querySelectorAll('#carList .car-option');
+
+    carSearch.addEventListener('input', function () {
+      const filter = this.value.toLowerCase();
+      let hasMatch = false;
+      carOptions.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        item.classList.toggle('hidden', !text.includes(filter));
+        if (text.includes(filter)) hasMatch = true;
+      });
+      carList.style.display = hasMatch ? 'block' : 'none';
+    });
+
+    carSearch.addEventListener('focus', function () {
+      carList.style.display = 'block';
+    });
+
+    carSearch.addEventListener('blur', function () {
+      setTimeout(() => carList.style.display = 'none', 200);
+    });
+
+    // Multi-Select Dropdown functionality
+    const multiSelect = document.getElementById('multiSelect');
+    multiSelect.addEventListener('click', function () {
+      Array.from(multiSelect.selectedOptions).forEach(option => {
+        option.classList.add('selected');
+      });
+    });
+
+    // Custom List Dropdown toggle
+    const dropdownButton = document.querySelector('.dropdown-button');
+    dropdownButton.addEventListener('click', function () {
+      const menu = document.querySelector('.dropdown-menu');
+      const isOpen = menu.classList.toggle('show');
+      dropdownButton.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Custom List Dropdown item click
+    const items = document.querySelectorAll('.dropdown-item');
+    items.forEach(item => {
+      item.addEventListener('click', function () {
+        dropdownButton.textContent = this.textContent;
+        document.querySelector('.dropdown-menu').classList.remove('show');
+      });
+    });
+  </script>
+
+  <footer class="footer">
+    <p>&copy; 2025 Automation Testing. All Rights Reserved.</p>
+  </footer>
+</body>
+
+</html>

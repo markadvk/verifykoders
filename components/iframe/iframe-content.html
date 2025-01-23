@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive content within an iframe for testing automation scenarios.">
+    <meta name="keywords" content="iframe content, automation testing, interactive iframe">
+    <meta name="author" content="Automation Testing Hub">
+    <title>Iframe Content</title>
+    <link rel="stylesheet" href="iframe-content.css">
+</head>
+
+<body>
+    <div class="iframe-content">
+        <h2>Welcome to the Iframe</h2>
+        <p>Type something below and submit:</p>
+
+        <label for="input-box" class="input-label">Input Box:</label>
+        <input type="text" id="input-box" placeholder="Enter text here..." aria-required="true" aria-label="Input Text">
+        <button id="submit-button" class="action-btn" aria-label="Submit Text">Submit</button>
+
+        <p id="result" aria-live="polite"></p>
+    </div>
+
+    <script>
+        document.getElementById('submit-button').addEventListener('click', () => {
+            const inputBox = document.getElementById('input-box');
+            const result = document.getElementById('result');
+
+            if (inputBox.value.trim() !== '') {
+                result.textContent = `Success: You entered "${inputBox.value}"!`;
+                result.style.color = 'green';
+            } else {
+                result.textContent = 'Error: Please enter some text.';
+                result.style.color = 'red';
+            }
+        });
+    </script>
+
+</body>
+
+</html>

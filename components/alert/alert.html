@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn to handle alert popups in automation testing with practical examples for basic alerts, confirmations, and prompts.">
+  <meta name="keywords" content="alert popup, automation testing, alert handling, confirmation, prompt, Playwright, Selenium">
+  <meta name="author" content="Automation Testing Hub">
+  <meta name="robots" content="index, follow">
+  <title>Alert Popup Testing</title>
+  <link rel="icon" href="./../../assets/favicon.ico">
+  <link rel="stylesheet" href="./../../css/header.css">
+  <link rel="stylesheet" href="./../../css/footer.css">
+  <link rel="stylesheet" href="alert.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1>Alert Popup Testing</h1>
+    <p>Learn to handle alert popups effectively</p>
+  </header>
+
+  <main class="alert-container">
+    <!-- Basic Alert Button -->
+    <section class="alert-section">
+      <button id="basicAlertBtn" class="alert-btn" aria-label="Trigger a basic alert">Trigger Basic Alert</button>
+    </section>
+
+    <!-- Confirmation Alert Button -->
+    <section class="alert-section">
+      <button id="confirmationAlertBtn" class="alert-btn" aria-label="Trigger a confirmation alert">Trigger Confirmation Alert</button>
+    </section>
+
+    <!-- Prompt Alert Button -->
+    <section class="alert-section">
+      <button id="promptAlertBtn" class="alert-btn" aria-label="Trigger a prompt alert">Trigger Prompt Alert</button>
+    </section>
+
+    <!-- Results Section -->
+    <section id="alertResult" class="alert-results" style="display: none;" aria-live="polite">
+      <h3>Alert Test Results:</h3>
+      <p><strong>Status:</strong> <span id="alertResultStatus"></span></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Automation Testing. All Rights Reserved.</p>
+  </footer>
+
+  <script src="alert.js" defer></script>
+</body>
+
+</html>

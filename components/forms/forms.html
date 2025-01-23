@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn to automate form filling, including text input, email, and message submission using automation tools.">
+  <meta name="keywords" content="form automation, form filling, testing forms, automation testing">
+  <meta name="author" content="Automation Testing Hub">
+  <meta name="robots" content="index, follow">
+  <title>Testing Form</title>
+  <link rel="icon" href="./../../assets/favicon.ico">
+  <link rel="stylesheet" href="./../../css/header.css">
+  <link rel="stylesheet" href="./../../css/footer.css">
+  <link rel="stylesheet" href="forms.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1>Basic Form</h1>
+    <p>Learn to fill forms using automation</p>
+  </header>
+
+  <main class="form-container">
+    <form id="testForm" aria-label="Automation Test Form">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required aria-required="true">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required aria-required="true">
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Write your message here" required aria-required="true"></textarea>
+      </div>
+      <button type="submit" class="submit-btn" aria-label="Submit Form">Submit</button>
+    </form>
+
+    <section id="submittedMessage" class="submitted-message" style="display: none;" aria-hidden="true">
+      <h3>Form Submitted Successfully!</h3>
+      <p><strong>Name:</strong> <span id="submittedName"></span></p>
+      <p><strong>Email:</strong> <span id="submittedEmail"></span></p>
+      <p><strong>Message:</strong> <span id="submittedMessageText"></span></p>
+    </section>
+  </main>
+
+  <script src="forms.js"></script>
+  <footer class="footer">
+    <p>&copy; 2025 Automation Testing. All Rights Reserved.</p>
+  </footer>
+</body>
+
+</html>

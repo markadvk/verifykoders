@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn to test file upload scenarios using automation, including standard uploads, drag-and-drop, and custom implementations.">
+  <meta name="keywords" content="file upload, automation testing, drag and drop, file input, custom file upload">
+  <meta name="author" content="Automation Testing Hub">
+  <meta name="robots" content="index, follow">
+  <title>File Upload Testing</title>
+  <link rel="icon" href="./../../assets/favicon.ico">
+  <link rel="stylesheet" href="./../../css/header.css">
+  <link rel="stylesheet" href="./../../css/footer.css">
+  <link rel="stylesheet" href="file-upload.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1>File Upload Testing</h1>
+    <p>Learn to upload files using automation effectively</p>
+  </header>
+
+  <main class="file-upload-container">
+
+    <!-- Standard File Upload -->
+    <section class="upload-section">
+      <h2>Standard File Upload</h2>
+      <input type="file" id="standardFileInput" class="file-input" aria-label="Standard File Upload">
+      <p class="message" id="standardFileResult">No file selected.</p>
+    </section>
+
+    <!-- Drag-and-Drop File Upload -->
+    <section class="upload-section">
+      <h2>Drag and Drop File Upload</h2>
+      <div id="dragDropArea" class="drag-drop-area" role="button" aria-label="Drag and Drop File Upload">
+        Drag and drop your file here or click to upload.
+        <input type="file" id="dragDropFileInput" class="hidden-file-input" aria-label="Drag and Drop Hidden File Input" />
+      </div>
+      <p class="message" id="dragDropResult">No file uploaded.</p>
+    </section>
+
+    <!-- Custom File Upload -->
+    <section class="upload-section">
+      <h2>Custom File Upload</h2>
+      <button id="customFileBtn" class="custom-btn" aria-label="Custom File Upload Button">Upload File</button>
+      <input type="file" id="customFileInput" class="hidden-file-input" aria-label="Custom Hidden File Input">
+      <p class="message" id="customFileResult">No file selected.</p>
+    </section>
+
+    <!-- File Upload Without Input Type="File" -->
+    <section class="upload-section">
+      <h2>File Upload Without Input Type="File"</h2>
+      <div id="fakeUploadArea" class="fake-upload-area" role="button" aria-label="Fake Upload Area">
+        Click here to upload a file
+      </div>
+      <input type="file" id="hiddenFileInput" class="hidden-file-input" aria-label="Fake Upload Hidden File Input">
+      <p class="message" id="fakeUploadResult">No file selected.</p>
+    </section>
+  </main>
+
+  <script src="file-upload.js"></script>
+  <footer class="footer">
+    <p>&copy; 2025 Automation Testing. All Rights Reserved.</p>
+  </footer>
+</body>
+
+</html>

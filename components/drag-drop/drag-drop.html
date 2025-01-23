@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn how to automate drag and drop scenarios with hands-on examples.">
+  <meta name="keywords" content="drag and drop, automation testing, draggable, drop zone, test automation">
+  <meta name="author" content="Automation Testing Hub">
+  <meta name="robots" content="index, follow">
+  <title>Drag and Drop Testing</title>
+  <link rel="icon" href="./../../assets/favicon.ico">
+  <link rel="stylesheet" href="./../../css/header.css">
+  <link rel="stylesheet" href="./../../css/footer.css">
+  <link rel="stylesheet" href="drag-drop.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Drag and Drop Testing</h1>
+    <p>Learn to automate drag and drop items effectively</p>
+  </header>
+
+  <main class="drag-drop-container">
+    <!-- Draggable Element -->
+    <section class="drag-item" id="dragItem" draggable="true" aria-label="Draggable item">
+      <p>Drag me!</p>
+    </section>
+
+    <!-- Drop Zone -->
+    <section class="drop-zone" id="dropZone" aria-label="Drop zone">
+      <p>Drop here!</p>
+    </section>
+
+    <!-- Submit Button -->
+    <section class="submit-section">
+      <button id="submitBtn" class="submit-btn" aria-label="Submit drag and drop result">Submit</button>
+    </section>
+
+    <!-- Results -->
+    <section id="dragResults" class="drag-results" style="display: none;" aria-live="polite">
+      <h3>Test Results:</h3>
+      <p><strong>Status:</strong> <span id="dragResultStatus"></span></p>
+    </section>
+  </main>
+
+  <script src="drag-drop.js" defer></script>
+  <footer class="footer">
+    <p>&copy; 2025 Automation Testing. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

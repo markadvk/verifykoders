@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn to automate calendar scenarios with examples for basic date pickers, date range pickers, and custom date formats.">
+  <meta name="keywords" content="calendar testing, automation testing, date picker, date range, custom date format, Flatpickr">
+  <meta name="author" content="Automation Testing Hub">
+  <meta name="robots" content="index, follow">
+  <title>Calendar Testing</title>
+  <link rel="icon" href="./../../assets/favicon.ico">
+  <link rel="stylesheet" href="./../../css/header.css">
+  <link rel="stylesheet" href="./../../css/footer.css">
+  <link rel="stylesheet" href="calendar.css">
+
+  <!-- Flatpickr CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1>Calendar Testing</h1>
+    <p>Learn to automate calendar scenarios effectively</p>
+  </header>
+
+  <main class="calendar-container">
+    <!-- Basic Date Picker -->
+    <section class="calendar-section">
+      <h2>Basic Date Picker</h2>
+      <input type="date" id="basicDatePicker" class="calendar-input" aria-label="Basic date picker">
+    </section>
+
+    <!-- Date Range Picker -->
+    <section class="calendar-section">
+      <h2>Date Range Picker</h2>
+      <input type="text" id="dateRangePicker" class="calendar-input" placeholder="Select a range" readonly aria-label="Date range picker">
+    </section>
+
+    <!-- Custom Date Format -->
+    <section class="calendar-section">
+      <h2>Custom Date Format</h2>
+      <input type="text" id="customDatePicker" class="calendar-input" placeholder="YYYY/MM/DD" readonly aria-label="Custom date format picker">
+    </section>
+
+    <!-- Submit Button -->
+    <section class="calendar-section">
+      <button id="submitBtn" class="calendar-submit-btn" aria-label="Submit selected dates">Submit</button>
+    </section>
+
+    <!-- Display Results -->
+    <section id="calendarResults" class="calendar-results" style="display: none;" aria-live="polite">
+      <h3>Selected Dates:</h3>
+      <p><strong>Basic Date Picker:</strong> <span id="basicDateResult"></span></p>
+      <p><strong>Date Range Picker:</strong> <span id="dateRangeResult"></span></p>
+      <p><strong>Custom Date Format:</strong> <span id="customDateResult"></span></p>
+    </section>
+  </main>
+
+  <!-- Flatpickr JS -->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr" defer></script>
+  <script src="calendar.js" defer></script>
+
+  <footer class="footer">
+    <p>&copy; 2025 Automation Testing. All Rights Reserved.</p>
+  </footer>
+</body>
+
+</html>

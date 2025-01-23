@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Test your Playwright automation skills with interactive iframe scenarios.">
+    <meta name="keywords" content="iframe handling, automation testing, Playwright iframe">
+    <meta name="author" content="Automation Testing Hub">
+    <meta name="robots" content="index, follow">
+    <title>Iframe Handling</title>
+    <link rel="icon" href="./../../assets/favicon.ico">
+    <link rel="stylesheet" href="./../../css/header.css">
+    <link rel="stylesheet" href="./../../css/footer.css">
+    <link rel="stylesheet" href="iframe.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Iframe Handling</h1>
+        <p>Test your Playwright automation skills with this interactive iframe page.</p>
+    </header>
+
+    <main>
+        <div class="container">
+            <iframe id="demo-iframe" src="iframe-content.html" title="Interactive Iframe" aria-label="Demo Iframe"></iframe>
+            <br>
+            <button id="main-page-button" class="action-btn" aria-label="Return to Main Page">Back to Main Page</button>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('main-page-button').addEventListener('click', () => {
+            alert('You have clicked the main page button!');
+        });
+    </script>
+
+    <footer class="footer">
+        <p>&copy; 2025 Automation Testing. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
