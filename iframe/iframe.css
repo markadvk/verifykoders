@@ -13,29 +13,23 @@ main {
     height: 100vh;
     padding: 20px;
     box-sizing: border-box;
-    margin: 0; /* Remove default margins */
+    margin: 0;
 }
 
 iframe {
     border: 2px solid #007bff;
     border-radius: 8px;
-    width: 100%; /* Makes iframe width responsive */
-    max-width: 800px; /* Prevents it from being too wide */
-    height: auto; /* Makes height proportional */
-    background-color: white;
-    aspect-ratio: 4 / 3; /* Maintains a 4:3 aspect ratio */
+    width: 100%;
+    max-width: 600px; /* Reduced max-width to make it smaller */
+    height: auto;
+    aspect-ratio: 4 / 3;
 }
 
 .container {
     text-align: center;
     width: 80%;
-    max-width: 800px;
-    margin: 0; /* Remove default margin */
-}
-
-.iframe-content {
-    padding: 1rem;
-    margin-top: 0; /* Reduce the top margin */
+    max-width: 600px; /* Matches iframe width */
+    margin: 0;
 }
 
 button {
