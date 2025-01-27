@@ -61,10 +61,22 @@ select:focus, input[type="text"]:focus {
     background-color: #f0f0f0;
 }
 
-/* Multi-Select Dropdown */
-select[multiple] {
-    height: 150px;
-    padding: 5px;
+#carSearch {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+#carSearch:focus {
+    outline: none;
+    border-color: #007BFF;
+}
+
+#carList .car-option.hidden {
+    display: none;
 }
 
 /* Custom Dropdown */
@@ -105,4 +117,21 @@ select[multiple] {
 
 .dropdown-item:hover {
     background-color: #f0f0f0;
+}
+
+.dropdown-item.selected {
+    background-color: #007BFF;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* General Improvements */
+select:hover, input[type="text"]:hover, .dropdown-button:hover {
+    border-color: #0056b3;
+    background-color: #f8f9fa;
+}
+
+select:focus, input[type="text"]:focus, .dropdown-button:focus {
+    outline: none;
+    border-color: #007BFF;
 }
