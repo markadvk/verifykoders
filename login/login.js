@@ -9,19 +9,21 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
     errorMessage.textContent = ''; // Clear previous error messages
 
-    // Validate credentials
-    if (username !== 'vinayak') {
-        errorMessage.textContent = 'Username is wrong';
+    // Check if any field is blank
+    if (username === '' || password === '') {
+        errorMessage.textContent = 'Username/Password field should not be blank';
         return;
     }
 
-    if (password !== 'automation') {
-        errorMessage.textContent = 'Password is wrong';
+    // Validate credentials
+    if (username !== 'vinayak' || password !== 'automation') {
+        errorMessage.textContent = 'Please enter valid username/password';
         return;
     }
 
     // If credentials are correct
-    alert('Login successful!');
+    errorMessage.textContent = 'Congratulations, you logged in successfully';
+    errorMessage.style.color = 'green';
 });
 
 document.querySelector('.forgot-password').addEventListener('click', function(event) {
