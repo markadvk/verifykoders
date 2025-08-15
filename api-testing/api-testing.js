@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:8080/api";
+const API_BASE = "https://api-project-e4cw.onrender.com/api";
 
 let authToken = null;
 
