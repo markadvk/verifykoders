@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="API testing dashboard for managing and testing API endpoints with live data.">
+  <meta name="keywords" content="API testing, automation testing, REST API, CRUD operations, API dashboard">
+  <meta name="author" content="Rapid Automation Hub">
+  <meta name="robots" content="index, follow">
+  <title>API Testing</title>
+  <link rel="icon" href="./../assets/fav_icon.ico">
+  <link rel="stylesheet" href="./../css/header.css">
+  <link rel="stylesheet" href="./../css/footer.css">
+  <link rel="stylesheet" href="api-testing.css">
+  <script defer src="api-testing.js"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h1>API Testing Dashboard</h1>
+    <p>Manage and test API endpoints effortlessly</p>
+  </header>
+
+  <main class="api-testing-container">
+    <!-- Login Section -->
+    <section id="login-section" class="api-section">
+      <h2>Login</h2>
+      <input type="email" id="email" placeholder="Email" value="admin@example.com" aria-label="Email">
+      <input type="password" id="password" placeholder="Password" value="Admin@123" aria-label="Password">
+      <button id="login-btn" aria-label="Login">Login</button>
+      <p id="login-msg" aria-live="polite"></p>
+    </section>
+
+    <!-- Table Section -->
+    <section id="table-section" class="api-section" style="display:none;">
+      <h2>Table Data</h2>
+      <button id="refresh-table" aria-label="Refresh table data">Refresh Table</button>
+      <button id="add-row" aria-label="Add a new row">Add Row</button>
+      <table id="api-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Role</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <p id="table-msg" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Automation Testing. All Rights Reserved.</p>
+  </footer>
+</body>
+
+</html>
