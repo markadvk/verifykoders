@@ -1,4 +1,4 @@
-const API_BASE = "https://api-project-e4cw.onrender.com/api";
+const API_BASE = "https://rapidtest-api.onrender.com/api";
 
 let authToken = null;
 
