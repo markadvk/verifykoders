@@ -16,7 +16,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     }
 
     // Validate credentials
-    if (username !== 'vinayak' || password !== 'automation') {
+    if (username !== 'verifykoders' || password !== 'automation') {
         errorMessage.textContent = 'Please enter valid username/password';
         return;
     }

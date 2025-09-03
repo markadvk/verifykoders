@@ -1,7 +1,7 @@
 
-# RapidTest - Automation Testing Hub
+# VerifyKoders - Automation Testing Hub
 
-Welcome to **RapidTest**! This website is dedicated to providing hands-on tutorials for learning **Playwright** automation testing through various scenarios and examples. The website is designed for anyone looking to get started with Playwright, from beginners to advanced testers.
+Welcome to **VerifyKoders**! This website is dedicated to providing hands-on tutorials for learning **Playwright** automation testing through various scenarios and examples. The website is designed for anyone looking to get started with Playwright, from beginners to advanced testers.
 
 ## Features
 
@@ -15,7 +15,7 @@ Welcome to **RapidTest**! This website is dedicated to providing hands-on tutori
 The project is organized into the following structure:
 
 ```
-rapidtest/
+verifykoders/
 ├── index.html            # Landing page (entry point)
 ├── components/           # Component-specific pages and examples
 │   ├── extract-element/  # Example: Extract Element
@@ -52,13 +52,13 @@ Make sure you have the following installed:
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/markadvk/rapidtest.git
+   git clone https://github.com/markadvk/verifykoders.git
    ```
 
 2. **Navigate to the Project Folder**
 
    ```bash
-   cd rapidtest
+   cd verifykoders
    ```
 
 3. **Open `index.html` in Your Browser**
