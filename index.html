@@ -8,22 +8,42 @@
   <meta name="keywords" content="automation testing, frameworks, demos, web tools, Playwright, Selenium">
   <meta name="author" content="VerifyKoders">
   <title>VerifyKoders | Home</title>
-  <link rel="icon" href="assets/fav_icon.ico">
+  <link rel="icon" href="assets/favicon.ico">
 
-  <!-- Shared CSS -->
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="css/body.css">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/home.css">
 </head>
 
 <body>
   <!-- Header -->
   <header class="header">
-    <h1>VerifyKoders</h1>
-    <p>Automation Frameworks • Freelancing Portfolio • Learning Demos</p>
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="assets/logo.png" alt="VerifyKoders Logo" class="logo">
+      </a>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="portfolio/">Portfolio</a></li>
+        <li><a href="demos/">UI Practice Playground</a></li>
+        <li><a href="contact/">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Main Content -->
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>VerifyKoders</h1>
+      <p>Automation Frameworks & Freelancing Portfolio for Clients</p>
+      <a href="portfolio/" class="btn-primary">🚀 View Portfolio</a>
+    </div>
+  </section>
+
+  <!-- Intro Section -->
   <main>
     <section class="intro">
       <h2>Hello, I'm Geetanjali 👋</h2>
@@ -32,32 +52,29 @@
         <strong>Sri</strong> (Senior SDET with 7+ years of experience) handles end-to-end
         automation delivery and communication.
         <br><br>
-        This site showcases my professional <strong>Portfolio</strong>, practical
-        <strong>Learning Demos</strong>, and ways to <strong>Contact</strong> me for collaboration.
+        This site showcases my professional <strong>Portfolio</strong>, a
+        <strong>Practice Playground</strong> to practice UI automation by your own, and ways to <strong>Contact</strong> me for collaboration.
       </p>
     </section>
 
+    <!-- Cards Section -->
     <section class="cards">
-      <!-- Portfolio -->
       <div class="card">
         <h3>Portfolio</h3>
         <p>See my freelancing-ready automation frameworks, CI/CD setups, reports, and templates.</p>
-        <a href="portfolio/">View Portfolio</a>
+        <a href="portfolio/" class="btn-link">View Portfolio →</a>
       </div>
 
-      <!-- Demos -->
       <div class="card">
-        <h3>Learning Demos</h3>
-        <p>Explore my playground of automation examples: forms, dropdowns, drag-drop, calendars, alerts, file
-          uploads and more.</p>
-        <a href="demos/">Explore Demos</a>
+        <h3>UI Practice Playground</h3>
+        <p>Explore my playground of automation examples: forms, dropdowns, drag-drop, calendars, alerts, file uploads and more.</p>
+        <a href="demos/" class="btn-link">Start Practicing →</a>
       </div>
 
-      <!-- Contact -->
       <div class="card contact-card">
         <h3>Contact</h3>
         <p>Get in touch with me via Fiverr, Upwork, LinkedIn, or email.</p>
-        <a href="contact/">Contact Me</a>
+        <a href="contact/" class="btn-link">Contact Me →</a>
       </div>
     </section>
   </main>
