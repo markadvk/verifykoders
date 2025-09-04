@@ -33,7 +33,8 @@ body {
     color: #0078d7;
 }
 
-.checkbox-group, .radio-group {
+.checkbox-group,
+.radio-group {
     margin: 10px 0;
 }
 
@@ -45,7 +46,8 @@ label {
     gap: 10px;
 }
 
-.checkbox, .radio {
+.checkbox,
+.radio {
     transform: scale(1.3);
     cursor: pointer;
 }

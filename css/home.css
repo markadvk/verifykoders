@@ -80,6 +80,7 @@ body {
   text-decoration: none;
   transition: all 0.3s ease;
 }
+
 .btn-primary:hover {
   background: #d62828;
   transform: scale(1.05);
@@ -113,14 +114,14 @@ body {
   background: #fff;
   border-radius: 16px;
   padding: 2rem;
-  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
 .card h3 {

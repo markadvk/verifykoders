@@ -4,7 +4,7 @@ function isValidDateFormat(date, format) {
   return dateRegex.test(date);
 }
 
-document.getElementById('submitBtn').addEventListener('click', function() {
+document.getElementById('submitBtn').addEventListener('click', function () {
   // Get the selected dates
   const basicDate = document.getElementById('basicDatePicker').value;
   const dateRange = document.getElementById('dateRangePicker').value;

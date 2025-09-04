@@ -20,7 +20,8 @@ iframe {
     border: 2px solid #007bff;
     border-radius: 8px;
     width: 100%;
-    max-width: 600px; /* Reduced max-width to make it smaller */
+    max-width: 600px;
+    /* Reduced max-width to make it smaller */
     height: auto;
     aspect-ratio: 4 / 3;
 }
@@ -28,7 +29,8 @@ iframe {
 .container {
     text-align: center;
     width: 80%;
-    max-width: 600px; /* Matches iframe width */
+    max-width: 600px;
+    /* Matches iframe width */
     margin: 0;
 }
 

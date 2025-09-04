@@ -1,6 +1,6 @@
 // script.js
 
-document.getElementById('loginForm').addEventListener('submit', function(event) {
+document.getElementById('loginForm').addEventListener('submit', function (event) {
     event.preventDefault(); // Prevent form submission
 
     const username = document.getElementById('username').value.trim();
@@ -26,7 +26,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     errorMessage.style.color = 'green';
 });
 
-document.querySelector('.forgot-password').addEventListener('click', function(event) {
+document.querySelector('.forgot-password').addEventListener('click', function (event) {
     event.preventDefault(); // Prevent default link behavior
     alert('Password is automation');
 });

@@ -28,7 +28,8 @@ label {
     margin-bottom: 10px;
 }
 
-select, input[type="text"] {
+select,
+input[type="text"] {
     width: 100%;
     padding: 10px;
     border: 2px solid #ccc;
@@ -36,7 +37,8 @@ select, input[type="text"] {
     font-size: 1em;
 }
 
-select:focus, input[type="text"]:focus {
+select:focus,
+input[type="text"]:focus {
     outline: none;
     border-color: #007BFF;
 }
@@ -126,12 +128,16 @@ select:focus, input[type="text"]:focus {
 }
 
 /* General Improvements */
-select:hover, input[type="text"]:hover, .dropdown-button:hover {
+select:hover,
+input[type="text"]:hover,
+.dropdown-button:hover {
     border-color: #0056b3;
     background-color: #f8f9fa;
 }
 
-select:focus, input[type="text"]:focus, .dropdown-button:focus {
+select:focus,
+input[type="text"]:focus,
+.dropdown-button:focus {
     outline: none;
     border-color: #007BFF;
 }

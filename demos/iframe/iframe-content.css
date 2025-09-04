@@ -8,8 +8,10 @@ body {
 }
 
 .iframe-content {
-    max-width: 400px; /* Reduced width for smaller box */
-    margin: 0 auto; /* Center the content */
+    max-width: 400px;
+    /* Reduced width for smaller box */
+    margin: 0 auto;
+    /* Center the content */
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -19,7 +21,8 @@ body {
 input[type="text"] {
     padding: 10px;
     width: 90%;
-    max-width: 300px; /* Reduced input width */
+    max-width: 300px;
+    /* Reduced input width */
     margin-bottom: 10px;
     border: 2px solid #007bff;
     border-radius: 5px;

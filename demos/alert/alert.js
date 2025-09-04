@@ -6,14 +6,14 @@ const alertResultStatus = document.getElementById('alertResultStatus');
 const alertResult = document.getElementById('alertResult');
 
 // Basic alert trigger
-basicAlertBtn.addEventListener('click', function() {
+basicAlertBtn.addEventListener('click', function () {
   alert("This is a basic alert!");
   alertResultStatus.innerText = 'Basic alert triggered successfully!';
   alertResult.style.display = 'block';
 });
 
 // Confirmation alert trigger
-confirmationAlertBtn.addEventListener('click', function() {
+confirmationAlertBtn.addEventListener('click', function () {
   const userResponse = confirm("Do you want to proceed?");
   if (userResponse) {
     alertResultStatus.innerText = 'User confirmed the action!';
@@ -24,7 +24,7 @@ confirmationAlertBtn.addEventListener('click', function() {
 });
 
 // Prompt alert trigger
-promptAlertBtn.addEventListener('click', function() {
+promptAlertBtn.addEventListener('click', function () {
   const userInput = prompt("Please enter your name:");
   if (userInput) {
     alertResultStatus.innerText = `User entered: ${userInput}`;

@@ -3,17 +3,17 @@
   background: linear-gradient(135deg, #1d3557, #457b9d);
   color: #fff;
   text-align: center;
-  padding: 2rem 1rem; /* smaller spacing */
+  padding: 2rem 1rem;
 }
 
 .hero h1 {
-  font-size: 1.8rem; /* smaller heading */
-  font-weight: 600;  /* slightly lighter */
-  margin-bottom: 0.5rem; /* less gap */
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
 }
 
 .hero p {
-  font-size: 1rem; /* smaller text */
-  margin-bottom: 1rem; /* less gap */
-  opacity: 0.9; /* keep readability */
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  opacity: 0.9;
 }
