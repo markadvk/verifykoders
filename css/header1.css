@@ -1,0 +1,57 @@
+/* Header (reusable across pages) */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #ffffff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* ensure it's above page sections */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 55px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+.logo:hover { transform: scale(1.05); }
+
+/* NAV */
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+
+  /* IMPORTANT: reset UA defaults so it aligns properly */
+  margin: 0;
+  padding: 0;
+}
+
+.nav li { /* keep li lean; no bullets/margins */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  display: inline-block;              /* better click area */
+  text-decoration: none;
+  color: #1d3557;
+  font-weight: 600;
+  padding: 0.25rem 0;                 /* small vertical padding */
+  transition: color 0.3s ease;
+}
+
+.nav a:hover { color: #e63946; }
+
+/* Optional: show current page (add class="active" to the link) */
+.nav a.active {
+  color: #e63946;
+}

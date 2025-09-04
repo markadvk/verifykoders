@@ -13,7 +13,7 @@ body {
 }
 
 /* ---------------- HEADER ---------------- */
-.header {
+/* .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,7 +48,7 @@ body {
 }
 .nav a:hover {
   color: #e63946;
-}
+} */
 
 /* ---------------- HERO ---------------- */
 .hero {
@@ -147,10 +147,10 @@ body {
 }
 
 /* ---------------- FOOTER ---------------- */
-.footer {
+/* .footer {
   background: #1d3557;
   color: #fff;
   text-align: center;
   padding: 1.5rem;
   font-size: 0.9rem;
-}
+} */
