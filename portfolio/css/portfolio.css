@@ -1,0 +1,146 @@
+/* Portfolio Page Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #f8f9fa;
+  color: #1d3557;
+}
+
+/* Hero */
+.portfolio-hero {
+  text-align: center;
+  background: #007bff;
+  color: white;
+  padding: 3rem 1rem;
+  border-radius: 0 0 20px 20px;
+}
+
+.portfolio-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.portfolio-hero p {
+  font-size: 1.2rem;
+}
+
+/* Video Section */
+.video-section {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.video-section .video-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.video-section iframe {
+  width: 420px;
+  height: 240px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Carousel */
+.screenshot-gallery {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  scroll-snap-type: x mandatory;
+  padding: 1rem;
+}
+
+.carousel .slide {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+}
+
+.carousel img {
+  height: 350px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: block;
+  margin: 0 auto;
+}
+
+.caption {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #444;
+  text-align: center;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Services */
+.services {
+  background: white;
+  padding: 3rem 1rem;
+  border-radius: 20px;
+  margin: 2rem auto;
+  max-width: 900px;
+}
+
+.services h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.services ul {
+  list-style: none;
+  padding: 0;
+  line-height: 1.8;
+}
+
+.services li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.services li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Call to Action */
+.cta {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: #2a9d8f; /* teal */
+  color: white;
+  border-radius: 20px;
+  margin: 2rem auto;
+  max-width: 700px;
+}
+
+.cta .btn-primary {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #fff;
+  color: #e63946;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.cta .btn-primary:hover {
+  background: #1d3557;
+  color: #fff;
+}
