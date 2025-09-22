@@ -1,106 +1,102 @@
-
 # VerifyKoders - Automation Testing Hub
 
-Welcome to **VerifyKoders**! This website is dedicated to providing hands-on tutorials for learning **Playwright** automation testing through various scenarios and examples. The website is designed for anyone looking to get started with Playwright, from beginners to advanced testers.
+[![License: Proprietary](https://img.shields.io/badge/License-Proprietary-red.svg)](./LICENSE)
 
-## Features
+Welcome to **VerifyKoders**!  
+This website is designed as a **QA & Automation portfolio** and a **learning hub** for Playwright-based web testing.  
+It contains portfolio showcases, demo scenarios, and ways to connect for collaboration.
 
-- Interactive examples of Playwright components and their usage.
-- Step-by-step guides for automating UI tests using Playwright.
-- Covers common web testing scenarios like extracting elements, dropdowns, forms, checkboxes, iframes, alerts, file uploads, and more.
-- Each scenario is self-contained with its own HTML, CSS, and JavaScript files.
+---
 
-## Project Structure
+## 🌟 Features
 
-The project is organized into the following structure:
+- **Portfolio Showcase**: Real client-ready automation portfolio with videos, screenshots, and project samples.  
+- **Interactive Demos**: Hands-on scenarios for Playwright automation (dropdowns, forms, checkboxes, iframes, alerts, file uploads, etc.).  
+- **Step-by-Step Guides**: Clear examples for extracting elements, handling components, and writing maintainable tests.  
+- **Self-Contained Pages**: Each demo is built with its own HTML, CSS, and JavaScript for easy learning.  
+- **Contact Page**: Direct links to reach out for projects, collaborations, or consultations.
+
+---
+
+## 📂 Project Structure
 
 ```
 verifykoders/
-├── index.html            # Landing page (entry point)
-├── components/           # Component-specific pages and examples
-│   ├── extract-element/  # Example: Extract Element
-│   ├── dropdowns/        # Example: Dropdowns
-│   ├── radio-checkbox/   # Example: Radio Buttons & Checkboxes
+├── index.html          # Landing page
+├── portfolio/          # Portfolio showcase (projects, videos, screenshots)
+├── demos/              # Playwright demo scenarios
+│   ├── dropdowns/      # Dropdown handling demo
+│   ├── forms/          # Forms demo
+│   ├── checkboxes/     # Checkbox demo
+│   ├── iframes/        # iFrame handling demo
 │   └── ...
-├── assets/               # Folder for images, fonts, and other assets
-├── css/                  # Folder for CSS files
-├── js/                   # Folder for JavaScript files
-└── README.md             # Project documentation
+├── contact/            # Contact information and links
+├── assets/             # Images, fonts, logos
+├── css/                # CSS styles
+├── js/                 # JavaScript scripts
+└── README.md           # Project documentation
 ```
 
-### Key Directories
+### Key Sections
 
-- **components/**: Contains individual component pages for each Playwright automation scenario.
-- **assets/**: Stores images, fonts, and other static assets used by the website.
-- **css/**: Holds all CSS files, including global styles (`main.css`) and component-specific styles.
-- **js/**: Contains JavaScript files, such as global scripts and component-specific interactions.
+- **portfolio/** → Displays automation portfolio (frameworks, CI/CD samples, reports).  
+- **demos/** → Contains interactive scenarios covering real-world Playwright features.  
+- **contact/** → Central place for all communication links (GitHub, LinkedIn, YouTube, etc.).  
+- **assets/css/js** → Supporting files for design and interactivity.
 
-## Setup Instructions
+---
 
-To set up and run this project locally, follow these steps:
+## 🚀 Setup Instructions
 
-### Prerequisites
-
-Make sure you have the following installed:
-
-- A modern web browser (e.g., Chrome, Firefox, Edge)
-- A code editor (e.g., VS Code) to edit and view files
-- Local server (optional, for testing dynamic behavior)
-
-### Steps
+To run locally:
 
 1. **Clone the Repository**
 
    ```bash
    git clone https://github.com/markadvk/verifykoders.git
-   ```
-
-2. **Navigate to the Project Folder**
-
-   ```bash
    cd verifykoders
    ```
 
-3. **Open `index.html` in Your Browser**
+2. **Open `index.html`**
 
-   You can open the `index.html` file directly in any web browser.
-
-   If you want to serve the site dynamically, you can use a simple local server:
-
-   - Using Python (if installed):
+   - Directly in a browser, or  
+   - Start a local server:  
      ```bash
      python -m http.server
-     ```
-
-   - Using Node.js with `http-server` (if installed):
+     ```  
+     or  
      ```bash
      npx http-server
      ```
 
-4. **Explore the Examples**
+3. **Explore the Sections**
 
-   Navigate through the different components by clicking the links in the **index.html** file. Each link will take you to a different scenario showcasing a specific Playwright functionality.
+   - Go to `/portfolio` → view projects and samples.  
+   - Go to `/demos` → try Playwright practice scenarios.  
+   - Go to `/contact` → connect with VerifyKoders.
 
-## Contributing
+---
 
-If you'd like to contribute to this project, feel free to open a pull request with your changes. You can contribute in the following ways:
+## 🤝 Contributing
 
-- Suggest new tutorials or Playwright scenarios to be added.
-- Improve existing examples or add detailed explanations.
-- Fix bugs or improve the documentation.
+This repo is primarily for **portfolio and demo purposes**.  
+Contributions are not accepted.
 
-### Steps to Contribute
+---
 
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-name`).
-3. Make your changes and commit them (`git commit -m 'Add new feature'`).
-4. Push to your fork (`git push origin feature-name`).
-5. Create a pull request on GitHub.
+## 🔖 About / Contact
 
-## License
+Maintained by **VerifyKoders — QA & Automation Portfolio**
 
-This project is open-source and available under the MIT License.
+🌐 Website: https://markadvk.github.io/verifykoders/  
+▶️ YouTube: https://www.youtube.com/@verifykoders  
+📩 Contact: [Reach out here](https://markadvk.github.io/verifykoders/contact/)
 
-## Contact
+---
 
-If you have any questions or feedback, feel free to reach out to me via GitHub issues or directly at [markadvk.sdet@gmail.com]
+## 📜 License
+
+This website and its contents are licensed under a **Proprietary License**.  
+Unauthorized copying, modification, or redistribution is strictly prohibited.
+
+© 2025 VerifyKoders. All rights reserved.
