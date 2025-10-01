@@ -5,13 +5,13 @@
   align-items: center;
   padding: 1rem 2rem;
   background: #ffffff;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
   position: sticky;
   top: 0;
   z-index: 1000;
-  /* ensure it's above page sections */
 }
 
+/* Logo */
 .logo-container {
   display: flex;
   align-items: center;
@@ -27,40 +27,71 @@
   transform: scale(1.05);
 }
 
-/* NAV */
+/* Nav (desktop) */
 .nav ul {
   list-style: none;
   display: flex;
   gap: 1.5rem;
-
-  /* IMPORTANT: reset UA defaults so it aligns properly */
-  margin: 0;
-  padding: 0;
-}
-
-.nav li {
-  /* keep li lean; no bullets/margins */
-  list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .nav a {
   display: inline-block;
-  /* better click area */
   text-decoration: none;
   color: #1d3557;
   font-weight: 600;
   padding: 0.25rem 0;
-  /* small vertical padding */
   transition: color 0.3s ease;
 }
 
-.nav a:hover {
+.nav a:hover,
+.nav a.active {
   color: #e63946;
 }
 
-/* Optional: show current page (add class="active" to the link) */
-.nav a.active {
-  color: #e63946;
+/* Hamburger button (hidden on desktop) */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* show hamburger */
+  }
+
+  .nav {
+    display: none; /* hide nav by default */
+    position: absolute;
+    top: 70px; /* below header */
+    right: 1rem;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    border-radius: 8px;
+    max-height: 70vh; /* scroll if too tall */
+    overflow-y: auto; /* enable vertical scroll */
+    animation: fadeIn 0.3s ease; /* smooth */
+    width: 200px; /* optional fixed width */
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .nav.open {
+    display: block; /* show when active */
+  }
+}
+
+/* Small fade-in effect */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
 }

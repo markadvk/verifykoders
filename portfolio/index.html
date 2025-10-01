@@ -28,6 +28,10 @@
         <img src="../assets/logo.png" alt="VerifyKoders Logo" class="logo">
       </a>
     </div>
+
+    <!-- Hamburger -->
+    <button class="menu-toggle" aria-label="Toggle menu">☰ Menu</button>
+
     <nav class="nav">
       <ul>
         <li><a href="../">Home</a></li>
@@ -46,11 +50,61 @@
     </div>
   </section>
 
+  <!-- GitHub Repos & Playground -->
+  <section class="repos">
+    <h2>📂 Explore My Work</h2>
+    <p>All frameworks are open-source and available on GitHub with clear documentation.
+      You can also try scenarios directly in my demo playground.</p>
+    <div class="repo-cards">
+      <a href="https://github.com/markadvk/playwright-portfolio" target="_blank" class="repo-card">
+        <h3>UI Automation Framework</h3>
+        <p>Playwright + TypeScript + POM.</p>
+      </a>
+      <a href="https://github.com/markadvk/playwright-api-portfolio" target="_blank" class="repo-card">
+        <h3>API Automation Framework</h3>
+        <p>Playwright APIRequestContext. CRUD, chaining, authentication.</p>
+      </a>
+      <a href="https://github.com/markadvk/playwright-hybrid-portfolio" target="_blank" class="repo-card">
+        <h3>Hybrid Framework</h3>
+        <p>UI + API integrated workflows with shared fixtures.</p>
+      </a>
+      <a href="../demos/index.html" target="_blank" class="repo-card">
+        <h3>Demo Playground</h3>
+        <p>Custom-built test website to showcase automation scenarios.</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- Case Studies -->
+  <section class="case-studies">
+    <h2>📊 Case Studies</h2>
+    <div class="case-grid">
+      <div class="case-card">
+        <h3>⏱ Faster Regression</h3>
+        <p><strong>Challenge:</strong> Manual regression testing took 3 days.</p>
+        <p><strong>Solution:</strong> Built Playwright UI automation suite.</p>
+        <p><strong>Result:</strong> Reduced testing to just 4 hours.</p>
+      </div>
+      <div class="case-card">
+        <h3>🔗 Reliable API Chaining</h3>
+        <p><strong>Challenge:</strong> Inconsistent API test coverage.</p>
+        <p><strong>Solution:</strong> Created Playwright API chaining with auth + CRUD.</p>
+        <p><strong>Result:</strong> 100% coverage of core business flows.</p>
+      </div>
+      <div class="case-card">
+        <h3>🚀 CI/CD Integration</h3>
+        <p><strong>Challenge:</strong> Delayed test execution & reporting.</p>
+        <p><strong>Solution:</strong> Jenkins pipeline with deployed reports.</p>
+        <p><strong>Result:</strong> Automated nightly runs + trend analysis.</p>
+      </div>
+    </div>
+  </section>
+
   <!-- Intro Videos -->
   <section class="video-section">
     <h2>👋 Meet Us</h2>
     <p>
-      We’re <strong>Geetanjali</strong> & <strong>Sri</strong>.
+      We’re <strong>Geetanjali</strong> & <strong>Sri</strong>.<br>
       In this short video, I (Geetanjali) walk you through our collaboration style,
       while Sri’s demo highlights the kind of automation frameworks and solutions
       we can deliver for clients.
@@ -65,7 +119,7 @@
     </div>
   </section>
 
-  <!-- port Carousel -->
+  <!-- Screenshot Gallery -->
   <section class="screenshot-gallery">
     <h2>📸 Portfolio Snapshots</h2>
     <p>&larr; Slide horizontally to see all snapshots &rarr;</p>
@@ -97,7 +151,7 @@
     </div>
   </section>
 
-  <!-- What I Offer -->
+  <!-- Services -->
   <section class="services">
     <h2>💼 What I Can Do for You</h2>
     <ul>
@@ -110,6 +164,89 @@
       <li>Ensure frameworks are <strong>scalable, maintainable, and client-friendly</strong></li>
       <li>Provide <strong>documentation & knowledge transfer</strong> for smooth handover</li>
     </ul>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing-section">
+    <h2>💰 Pricing</h2>
+    <p class="pricing-intro">Transparent and flexible pricing – choose hourly or project-based packages.</p>
+
+    <div class="pricing-cards">
+      <!-- Hourly -->
+      <div class="card">
+        <h3>⏱ Hourly Engagement</h3>
+        <p class="price">$12 / hr</p>
+        <p class="note">(starting rate – ideal for small or ongoing tasks)</p>
+      </div>
+
+      <!-- Smoke Suite -->
+      <div class="card">
+        <h3>🔥 Starter Smoke Suite</h3>
+        <p class="price">$150 – $250</p>
+        <ul>
+          <li>5–8 core smoke test cases</li>
+          <li>Basic Playwright automation framework</li>
+          <li>Reports included (HTML / JUnit)</li>
+          <li>Quick setup for new projects</li>
+          <li><strong>Delivery:</strong> 5–7 days</li>
+        </ul>
+      </div>
+
+      <!-- Regression -->
+      <div class="card">
+        <h3>🔄 Regression Automation</h3>
+        <p class="price">$400 – $600</p>
+        <ul>
+          <li>20–30 regression test cases</li>
+          <li>End-to-end UI coverage with Playwright</li>
+          <li>Reusable Page Object Model (POM)</li>
+          <li>Detailed HTML & JUnit reports</li>
+          <li><strong>Delivery:</strong> 10–14 days</li>
+        </ul>
+      </div>
+
+      <!-- Hybrid -->
+      <div class="card">
+        <h3>⚡ Hybrid Framework</h3>
+        <p class="price">$600 – $900</p>
+        <ul>
+          <li>30–40 automated tests (UI + API mix)</li>
+          <li>Advanced Playwright + REST API coverage</li>
+          <li>Data-driven tests with reusable utilities</li>
+          <li>CI/CD pipeline integration (Jenkins/GitHub Actions)</li>
+          <li><strong>Delivery:</strong> 14–20 days</li>
+        </ul>
+      </div>
+
+      <!-- CI/CD -->
+      <div class="card">
+        <h3>🚀 CI/CD Setup</h3>
+        <p class="price">$200 – $400</p>
+        <ul>
+          <li>Pipeline setup (Jenkins/GitHub/GitLab)</li>
+          <li>Deployed reports</li>
+          <li>Automated nightly runs</li>
+        </ul>
+      </div>
+
+      <!-- Dashboard -->
+      <div class="card">
+        <h3>📊 Test Dashboard</h3>
+        <p class="price">$150 – $250</p>
+        <ul>
+          <li>Excel dashboard for test cases</li>
+          <li>KPI & summary metrics</li>
+          <li>Customizable templates</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>⭐ Client Testimonials</h2>
+    <p>Coming soon – after completing first client projects.
+      Meanwhile, explore my GitHub repos and demos as proof of work.</p>
   </section>
 
   <!-- Call to Action -->
@@ -126,6 +263,8 @@
   <footer class="footer">
     <p>&copy; 2025 VerifyKoders. All Rights Reserved.</p>
   </footer>
+
+  <script src="../js/hamburger.js" defer></script>
 </body>
 
 </html>
