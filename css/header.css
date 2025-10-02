@@ -1,29 +1,19 @@
-/* Header */
-.header {
+/* ---------------- HERO-HEADER OF PLAYGROUND COMPONENTS ---------------- */
+.hero {
+  background: linear-gradient(135deg, #1d3557, #457b9d);
+  color: #fff;
   text-align: center;
-  background-color: #007bff;
-  color: white;
-  padding: 30px 20px;
-  margin-bottom: 30px;
-  border-radius: 0 0 20px 20px;
+  padding: 2rem 0rem;
 }
 
-.header h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
+.hero h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0rem;
 }
 
-.header p {
-  font-size: 1.2em;
-  margin: 0;
-}
-
-@media (max-width: 600px) {
-  .header h1 {
-    font-size: 2em;
-  }
-
-  .header p {
-    font-size: 1em;
-  }
+.hero p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  opacity: 0.9;
 }

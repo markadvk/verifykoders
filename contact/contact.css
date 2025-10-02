@@ -12,25 +12,6 @@ body {
   background: #f9f9f9;
 }
 
-/* Contact Hero */
-.contact-hero {
-  text-align: center;
-  padding: 4rem 2rem;
-  background: linear-gradient(135deg, #1d3557, #457b9d);
-  color: #fff;
-}
-
-.contact-hero h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-.contact-hero p {
-  font-size: 1.2rem;
-  opacity: 0.9;
-}
-
 /* Contact Cards */
 .contact-cards {
   display: grid;
