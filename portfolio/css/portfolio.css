@@ -31,8 +31,33 @@ body {
   color: #1d3557;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
   transition: 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 .repo-card:hover { background: #e7f0ff; }
+
+.repo-card p {
+  flex-grow: 1;
+}
+
+.btn-secondary {
+  display: inline-block;
+  padding: 0.6em 1.2em;
+  background-color: #f4f4f4;
+  color: #333;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-align: center;
+  text-decoration: none;
+  align-self: center;
+  pointer-events: none;
+}
 
 /* Case Studies */
 .case-studies {
