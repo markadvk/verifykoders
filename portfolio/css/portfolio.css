@@ -6,8 +6,11 @@ body {
   color: #1d3557;
 }
 
-/* Repos, Case Studies, Pricing, Testimonials */
-.repos, .case-studies, .pricing, .testimonials {
+/* Repos, Case Studies, Testimonials, video-section */
+.repos,
+.case-studies,
+.testimonials,
+.video-section {
   padding: 3rem 1rem;
   margin: 2rem auto;
   max-width: 1000px;
@@ -29,14 +32,17 @@ body {
   border-radius: 12px;
   text-decoration: none;
   color: #1d3557;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   transition: 0.3s ease;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
-.repo-card:hover { background: #e7f0ff; }
+
+.repo-card:hover {
+  background: #e7f0ff;
+}
 
 .repo-card p {
   flex-grow: 1;
@@ -98,72 +104,117 @@ body {
 
 /* Pricing Comparison Table */
 .pricing-comparison {
-  margin: 3rem auto;
   max-width: 1000px;
-  padding: 1.5rem;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, sans-serif;
 }
 
 .pricing-comparison h2 {
   text-align: center;
+  margin-bottom: 25px;
   font-size: 2rem;
-  margin-bottom: 1.5rem;
-  font-weight: 700;
+}
+
+.pricing-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.card {
+  flex: 1;
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.card .price {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #0078d7;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 15px;
+}
+
+.card ul li {
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 0.95rem;
+}
+
+.card .delivery {
+  font-weight: bold;
   color: #333;
 }
 
-.pricing-comparison table {
-  width: 100%;
-  border-collapse: collapse;
-  font-family: 'Poppins', sans-serif;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  border-radius: 8px;
-  overflow: hidden;
+.addons h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
 }
 
-.pricing-comparison th,
-.pricing-comparison td {
-  padding: 1rem;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
+.addons ul {
+  list-style: none;
+  padding: 0;
 }
 
-.pricing-comparison th {
-  background-color: #2b6cb0; /* blue header */
-  color: #fff;
-  font-weight: 600;
-  text-align: center;
+.addons li {
+  background: #f1f8ff;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  border-left: 4px solid #0078d7;
+  border-radius: 6px;
 }
 
-.pricing-comparison td {
-  background: #fff;
-  color: #444;
+.hourly {
+  margin-top: 20px;
+  background: #f1f8ff;
+  padding: 12px;
+  border-left: 4px solid #0078d7;
+  border-radius: 6px;
+  font-size: 0.95rem;
 }
 
-.pricing-comparison tr:nth-child(even) td {
-  background: #f9f9f9; /* alternate row shading */
-}
+@media (max-width: 768px) {
+  .pricing-cards {
+    flex-direction: column;
+  }
 
-.pricing-comparison tr:hover td {
-  background: #f1f7ff; /* light blue hover */
-}
+  .card {
+    margin-bottom: 20px;
+  }
 
-.pricing-comparison td:first-child {
-  font-weight: 600;
-}
-
-.pricing-comparison td:nth-child(2) {
-  font-weight: 700;
-  color: #2b6cb0;
-  text-align: center;
-}
-
-.pricing-comparison td:last-child {
-  text-align: center;
-  font-style: italic;
+  .card .price {
+    font-size: 1.4rem;
+  }
 }
 
 /* Testimonials */
-.testimonials p { font-size: 1.1rem; color: #555; }
+.testimonials p {
+  font-size: 1.1rem;
+  color: #555;
+}
 
 /* Video Section */
 .video-section {
@@ -186,50 +237,103 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Carousel */
+/* Screenshots - Carousel */
 .screenshot-gallery {
   padding: 3rem 1rem;
   text-align: center;
+  position: relative;
+  background: #fafafa;
 }
 
 .carousel {
   display: flex;
   overflow-x: auto;
-  gap: 1rem;
   scroll-snap-type: x mandatory;
-  padding: 1rem;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  padding: 2rem 0;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
 }
 
 .carousel .slide {
-  flex: 0 0 auto;
+  flex: 0 0 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   scroll-snap-align: center;
 }
 
 .carousel img {
   height: 350px;
+  max-width: 90%;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  display: block;
-  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .caption {
-  margin-top: 0.5rem;
+  margin-top: 0.75rem;
   font-size: 0.95rem;
   color: #444;
   text-align: center;
-  max-width: 300px;
+  max-width: 400px;
   margin-left: auto;
   margin-right: auto;
+  line-height: 1.4;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  color: #333;
+  border: none;
+  font-size: 2rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+.carousel-btn:hover {
+  background: #333;
+  color: #fff;
+}
+
+.carousel-btn.left {
+  left: 10px;
+}
+
+.carousel-btn.right {
+  right: 10px;
+}
+
+@media (max-width: 600px) {
+  .carousel img {
+    height: 250px;
+  }
+
+  .carousel-btn {
+    font-size: 1.5rem;
+    padding: 0.3rem 0.6rem;
+  }
 }
 
 /* Services */
 .services {
-  background: white;
-  padding: 3rem 1rem;
-  border-radius: 20px;
-  margin: 2rem auto;
-  max-width: 900px;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, sans-serif;
 }
 
 .services h2 {

@@ -124,36 +124,41 @@
   </section>
 
   <!-- Screenshot Gallery -->
-  <section class="screenshot-gallery">
-    <h2>📸 Portfolio Snapshots</h2>
-    <p>&larr; Slide horizontally to see all snapshots &rarr;</p>
-    <div class="carousel">
-      <div class="slide">
-        <img src="../assets/portfolio-snaps/jenkins-console.png" alt="Jenkins CI Console">
-        <p class="caption">Jenkins CI Console – running pipeline with automation jobs</p>
-      </div>
-      <div class="slide">
-        <img src="../assets/portfolio-snaps/trend-analyzer.png" alt="Jenkins Trend Analyzer">
-        <p class="caption">Trend Analyzer – visualize stability and past build results</p>
-      </div>
-      <div class="slide">
-        <img src="../assets/portfolio-snaps/deployed-results.png" alt="Deployed Build Results">
-        <p class="caption">Deployed Results – Store, access, and review detailed reports from recent builds</p>
-      </div>
-      <div class="slide">
-        <img src="../assets/portfolio-snaps/framework-structure.png" alt="Framework Folder Structure">
-        <p class="caption">Framework Structure – scalable and standard folder setup</p>
-      </div>
-      <div class="slide">
-        <img src="../assets/portfolio-snaps/test-dashboard.png" alt="Test Case Dashboard">
-        <p class="caption">Test Case Dashboard – Excel with KPIs and summary metrics</p>
-      </div>
-      <div class="slide">
-        <img src="../assets/portfolio-snaps/test-template.png" alt="Test Template">
-        <p class="caption">Test Template - For Test Planning, Execution Monitoring, and Reporting</p>
-      </div>
+   <section class="screenshot-gallery">
+  <h2>📸 Portfolio Snapshots</h2>
+  <p>&larr; Use arrows or swipe to see more &rarr;</p>
+
+  <button class="carousel-btn left" aria-label="Scroll left">‹</button>
+
+  <div class="carousel">
+    <div class="slide">
+      <img src="../assets/portfolio-snaps/jenkins-console.png" alt="Jenkins CI Console">
+      <p class="caption">Jenkins CI Console – running pipeline with automation jobs</p>
     </div>
-  </section>
+    <div class="slide">
+      <img src="../assets/portfolio-snaps/trend-analyzer.png" alt="Jenkins Trend Analyzer">
+      <p class="caption">Trend Analyzer – visualize stability and past build results</p>
+    </div>
+    <div class="slide">
+      <img src="../assets/portfolio-snaps/deployed-results.png" alt="Deployed Build Results">
+      <p class="caption">Deployed Results – Store, access, and review detailed reports from recent builds</p>
+    </div>
+    <div class="slide">
+      <img src="../assets/portfolio-snaps/framework-structure.png" alt="Framework Folder Structure">
+      <p class="caption">Framework Structure – scalable and standard folder setup</p>
+    </div>
+    <div class="slide">
+      <img src="../assets/portfolio-snaps/test-dashboard.png" alt="Test Case Dashboard">
+      <p class="caption">Test Case Dashboard – Excel with KPIs and summary metrics</p>
+    </div>
+    <div class="slide">
+      <img src="../assets/portfolio-snaps/test-template.png" alt="Test Template">
+      <p class="caption">Test Template - For Test Planning, Execution Monitoring, and Reporting</p>
+    </div>
+  </div>
+
+  <button class="carousel-btn right" aria-label="Scroll right">›</button>
+</section>
 
   <!-- Services -->
   <section class="services">
@@ -171,57 +176,65 @@
   </section>
 
   <!-- Pricing Comparison Table -->
-  <section class="pricing-comparison">
-    <h2>💰 Pricing</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Package</th>
-          <th>Price</th>
-          <th>What’s Included</th>
-          <th>Delivery</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>⏱ Hourly Engagement</td>
-          <td>$12/hr</td>
-          <td>Small or ongoing tasks, flexible hours</td>
-          <td>As required</td>
-        </tr>
-        <tr>
-          <td>🔥 Starter Smoke Suite</td>
-          <td>$150</td>
-          <td>5–8 core smoke cases, basic framework, HTML/JUnit reports</td>
-          <td>4–5 days</td>
-        </tr>
-        <tr>
-          <td>🔄 Regression Automation</td>
-          <td>$250</td>
-          <td>18-20 regression cases, POM framework, reports</td>
-          <td>7–8 days</td>
-        </tr>
-        <tr>
-          <td>⚡ Hybrid Framework</td>
-          <td>$500</td>
-          <td>Full UI + API automation with CI/CD integration and reports.</td>
-          <td>11–12 days</td>
-        </tr>
-        <tr>
-          <td>🚀 CI/CD Setup</td>
-          <td>$150</td>
-          <td>Pipeline setup, secrets management, deployed reports</td>
-          <td>3–4 days</td>
-        </tr>
-        <tr>
-          <td>📊 Test Dashboard</td>
-          <td>$50</td>
-          <td>Excel dashboard, KPIs, customizable templates</td>
-          <td>1–2 days</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
+<section class="pricing-comparison">
+  <h2>💰 Pricing</h2>
+
+  <div class="pricing-cards">
+    <div class="card">
+      <h3>🌱 Starter</h3>
+      <p class="price">$99</p>
+      <ul>
+        <li>Up to 4 automated tests</li>
+        <li>Functionality testing</li>
+        <li>Summary test report</li>
+        <li>5 min screen recording</li>
+        <li>1 revision</li>
+      </ul>
+      <p class="delivery">⏱ 2 days</p>
+    </div>
+
+    <div class="card">
+      <h3>🚀 Standard</h3>
+      <p class="price">$199</p>
+      <ul>
+        <li>Everything in Starter</li>
+        <li>Annotated screenshots</li>
+        <li>Browser compatibility testing</li>
+        <li>8 min screen recording</li>
+        <li>1 revision</li>
+      </ul>
+      <p class="delivery">⏱ 4 days</p>
+    </div>
+
+    <div class="card">
+      <h3>💼 Advanced</h3>
+      <p class="price">$349</p>
+      <ul>
+        <li>Everything in Standard</li>
+        <li>Responsiveness testing</li>
+        <li>Usability testing</li>
+        <li>Extended recording (10 min)</li>
+        <li>3 revisions</li>
+      </ul>
+      <p class="delivery">⏱ 6 days</p>
+    </div>
+  </div>
+
+  <div class="addons">
+    <h3>🧩 Optional Add-ons</h3>
+    <ul>
+      <li>➕ Additional 10 Tests — <strong>$100</strong> (+2 days)</li>
+      <li>📊 Interactive Allure Report — <strong>$50</strong> (+1 day)</li>
+      <li>⚙️ CI/CD Pipeline Setup — <strong>$150</strong> (+3 days)</li>
+      <li>🔁 Additional Revision — <strong>$20</strong> (+1 day)</li>
+    </ul>
+  </div>
+
+  <div class="hourly">
+    <p>💼 <strong>Hourly Engagement:</strong> $12/hr for small or ongoing tasks (flexible delivery).</p>
+  </div>
+</section>
+
 
   <!-- Testimonials -->
   <section class="testimonials">
@@ -247,6 +260,7 @@
   </footer>
 
   <script src="../js/hamburger.js" defer></script>
+  <script src="./js/portfolio.js"></script>
 </body>
 
 </html>
