@@ -211,10 +211,54 @@ body {
 }
 
 /* Testimonials */
-.testimonials p {
+/* Testimonials */
+.testimonial {
+  background: #f8f9fa;
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial .feedback {
+  font-style: italic;
+  color: #333;
   font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+}
+
+.testimonial .client {
+  font-weight: 600;
+  color: #222;
+}
+
+.testimonial .client span {
+  font-weight: 400;
+  color: #777;
+}
+
+.testimonial .rating {
+  font-size: 1.2rem;
+  color: #f5b301;
+  margin-top: 0.3rem;
+}
+
+.testimonials .testimonial-upwork {
+  margin-top: 2rem;
+  font-size: 1rem;
   color: #555;
 }
+
+.testimonials .testimonial-upwork a {
+  color: #1d9d73;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.testimonials .testimonial-upwork a:hover {
+  text-decoration: underline;
+}
+/********************************/
 
 /* Video Section */
 .video-section {
